@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray
+}
+
+.profile-card {
+    max-width: 370px;
+    width:100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.profile-card::before{
+    content:'';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #1ebb7a;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+
+}
+
+
+.profile-card .text-data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:#096b19
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f3c11e;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px
+}
+
+.media-buttons .link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 0 8px;
+    text-decoration: none;
+    background-color: #096b19;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.buttons .button {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;  
+    border-radius: 24px;
+    border: none;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #1ebb7a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover{
+    background-color: forestgreen;
+}
+
+.seila {
+    text-indent: 5px;
+    text-justify: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+strong {
+    
+    background: -webkit-linear-gradient(#fcbc5c, #037231);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

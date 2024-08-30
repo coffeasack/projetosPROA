@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #ee9dda;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .slider {
+    background: url(../img/kbg1.png);
+    background-size: cover;
+    height: 450px;
+    width: 800px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.3);
+    animation: animate 20s infinite;
+  }
+  @keyframes animate {
+
+    20% {
+      background: url(../img/kbg1.png);
+      background-size: cover;
+    }
+    40% {
+      background: url(../img/kbg2.png);
+      background-size: cover;
+    }
+    60% {
+      background: url(../img/kbg3.png);
+      background-size: cover;
+    }
+    80% {
+      background: url(../img/kbg4.png);
+      background-size: cover;
+    }
+    100% {
+      background: url(../img/kbg5.png);
+      background-size: cover;
+    }
+  
+  }
+  
